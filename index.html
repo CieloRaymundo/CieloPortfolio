@@ -12,17 +12,78 @@
 
 <!DOCTYPE html>
 <head>   
-    <!--Title -->
-    
-    <!-- Your CSS  -->
-    
-    <!-- Bootstrap CSS  -->
-    
-    <!-- Fontawesome CSS  -->
-    
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="./css/style.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+
+        <!-- 
+            1. Try scrolling. 
+            
+            2. Now let's add navbar-fixed-top to the
+                    nav's class after navbar-default and try scrolling again
+        -->
+        
+        <!--
+            3. Now we are going to add ScrollSpy, 
+            
+             replace <body> above with: 
+    
+             <body data-spy="scroll" data-target=".navbar">
+             
+            Adding these attributes will make it so that our navbar updates
+            according to our scroll position. Try scrolling again.
+        -->
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+             <div class="row">
+                  
+             
+            <div class="col-md-12"> 
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Cielo!</a>
+            </div>
+            </div>
+            
+            <ul class="nav navbar-nav ">
+              <li class="active"><a href="#section-one">Home</a></li>
+              <li><a href="#section-two">About me</a></li>
+              <li><a href="#section-three">Portfolio</a></li>
+              <li><a href="#section-four">Contact</a></li>
+             
+              
+             </div>  
+            <!-- 
+              
+            5. 
+            Add two more colors of your choice. Remember to also 
+            add the ids to the href section  with the corresponding id's below
+            -->
+              
+            </ul>
+          </div>
+        </nav>
+        
+        <!-- 4. Now try replacing navbar-default with navbar-inverse-->
+        
+        <div class="container-fluid">
+          <div class="color_div" id="section-one" style="background-color: yellow"></div>
+          <div class="color_div" id="section-two" style="background-color: green">
+              <h1 class= "page-title"> About Me </h1>
+              <p id="about">I am 17 years old. I go to the High School of Fashion Industries, 
+              where I major in fashion design. I have developed some coding skills like html,
+              css, and javascript. I'm still furthering my skills in this field.
+              </p>
+          </div>
+          <div class="color_div" id="section-three" style="background-color: red"></div>
+          <div class="color_div" id="section-four" style="background-color: blue"></div>
+          <div class="color_div" id="section-five" style="background-color: pink"></div>
+        </div>
+       
+    </body>
     <!-- Nav Bar -->
     
     
@@ -49,6 +110,6 @@
     
     <!-- Your Javascript -->
     
-</body>
+
 
 </html>
