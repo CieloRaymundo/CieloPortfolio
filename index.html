@@ -36,24 +36,17 @@
             Adding these attributes will make it so that our navbar updates
             according to our scroll position. Try scrolling again.
         -->
-
+    <body data-spy="scroll" data-target=".navbar" id="background">
+        
         <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container-fluid">
             <div class="row">
                   
-                <div class="col-xs-offset-3 col-xs-6"> 
-                    <div class="navbar-header">
-                      <a class="navbar-brand" href="#">Cielo Raymundo</a>
-                    </div>
-                </div>
-           
-              <div class ="col-xs-0ffset-2 col-xs-6">
-                <ul class="nav navbar-nav ">
-                  <li class="active"><a href="#section-one">Home</a></li>
-                  <li><a href="#section-two">About me</a></li>
-                  <li><a href="#section-three">Portfolio</a></li>
-                  <li><a href="#section-four">Contact</a></li>
-                </ul>  
+                <div class= "col-xs-offset-10 col-xs-2"> 
+                    <ul class="nav navbar-nav " class="nav">
+                        <li class="active"><a href="#section-one" id ="hb">Home</a></li>
+                        <li><a href="#section-two">Portfolio</a></li>
+                    </ul>  
               </div>
            
             </div>
@@ -72,20 +65,39 @@
         
         <!-- 4. Now try replacing navbar-default with navbar-inverse-->
         
-        <div class="container-fluid">
+        <div class="container-fluid" id="home">
             <div class="row">
-                <div class= "col-xs-7">
-                  <div class="color_div" id="section-one" style="background-color: yellow"></div>
+                <div class= "col-xs-12">
+                  <div class="color_div" id="section-one" >
+                     <div class= "row">
+                         <div class="col-xs-offset-4 col-xs-4">
+                             <img id="pic" src="https://pbs.twimg.com/profile_images/625816581755506688/K5_TL5gH_400x400.jpg" >
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-xs-offset-5 col-xs-3" >
+                             <h1>    Cielo Raymundo</h1>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-xs-offset-3 col-xs-8" >
+                             <h1>Student ~ Fashion Designer~Programmer </h1>
+                         </div>
+                    </div>
+                         <center>
+                             <p id="about">
+                                     I am 17 years old and  go to the High School of Fashion Industries. 
+                                      In my school I major in fashion design, I know how to drape, pattern make and sew. 
+                                      I have developed some coding skills like html,css, and javascript I will continue
+                                    to further my skills in this field.
+                            </p>
+                        </center>
+                    </div>
+                    </div>
+                     
                 </div>
-            </div>  
-          <div class="color_div" id="section-two" style="background-color: green">
-              <h1 class= "page-title"> About Me </h1>
-              <p id="about">I am 17 years old. I go to the High School of Fashion Industries, 
-              where I major in fashion design. I have developed some coding skills like html,
-              css, and javascript. I'm still furthering my skills in this field.
-              </p>
-          </div>
-          <div class="color_div" id="section-three" style="background-color: red">
+            </div>
+          <div class="color_div" id="section-two">
                <div class="container">
                     <div class="row">
                         <div class="col-xs-4">
@@ -94,19 +106,39 @@
                         </div>
                 
                         <div class="col-xs-4">
-                            <h4 class="text-center">Project Name</h4>
-                            <img class="img-responsive" src="https://bit.ly/scripted-in-progress">
+                            <h4 class="text-center">Pig Latinizer</h4>
+                            <img class="img-responsive" src="https://rlv.zcache.co.nz/flying_pig_piglet_with_wings_classic_round_sticker-r9f8a761766b44de2a08173ab675fa4a5_v9waf_8byvr_260.jpg">
+                            <a href ="https://cieloraymundo.github.io/piglatinizer/">Live Link</a>
+                            <div class ="col-xs-8">
+                            <a href ="https://github.com/CieloRaymundo/piglatinizer">Source</a>
+                            </div>
                         </div> 
                 
                         <div class="col-xs-4">
-                            <h4 class="text-center">Project Name</h4>
-                            <img class="img-responsive" src="https://bit.ly/scripted-in-progress">
+                            <h4 class="text-center">Gif Finder</h4>
+                            <img class="img-responsive" src="https://scriptedcurriculum.github.io/advanced_portfolio_solution/images/giphy.png">
+                            <a href ="https://cieloraymundo.github.io/giffinder/">Live Link</a>
+                            <div class ="col-xs-8">
+                            <a href ="https://github.com/CieloRaymundo/giffinder">Source</a>
                         </div>
                     </div>
               </div>
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <h4 class="text-center">Choose Your Own Adventure</h4>
+                            <img class="img-responsive" src="https://bit.ly/scripted-in-progress">
+                            <a href ="https://cieloraymundo.github.io/ChooseYourOwnAdventure/">Live Link</a>
+                            <div class ="col-xs-8">
+                            <a href ="https://github.com/CieloRaymundo/ChooseYourOwnAdventure">Source</a>
+                        </div>
+            
+                    </div>
+              </div>
           </div>
-          <div class="color_div" id="section-four" style="background-color: blue"></div>
-          <div class="color_div" id="section-five" style="background-color: pink"></div>
+
+          
+          
         </div>
        
     </body>
@@ -120,22 +152,6 @@
     
 
     <!-- About Section -->
-   
-
-    <!-- Contact Section -->
-
-
-    <!-- Footer -->
-
-    
-    <!-- Jquery Script -->
-    
-    
-    <!--Bootstrap Javascript -->
-    
-    
-    <!-- Your Javascript -->
-    
 
 
 </html>
